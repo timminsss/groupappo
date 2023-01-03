@@ -79,7 +79,7 @@ puts "Creating gruppettos"
 user = User.find_by(first_name: "Ryan")
 track = Track.create(user: user, name: tracks[0][0])
 track.file.attach(io: tracks[0][1], filename: tracks[0][1].original_filename, content_type: 'application/xml')
-grup = Gruppetto.create(name: "Ryan's Ferrari Bike Race", track: track, user: user, start: DateTime.strptime("12/12/2022 11:00", "%d/%m/%Y %H:%M"),
+grup = Gruppetto.create(name: "Ryan's Ferrari Bike Race", track: track, user: user, start: DateTime.strptime("12/12/2023 11:00", "%d/%m/%Y %H:%M"),
                   description: "Want to see my Ferrari? Here is your chance! My bike is a 1 of 1 Ferrari, says the sticker I put on the side of it. It's a road race.", gruppetto_status: 'upcoming',
                   difficulty: "Easy", event_type: "Open", participation_rule: "Manual", avg_speed: 20)
 Participation.create(user: user, gruppetto: grup, participation_status: 1)
@@ -87,7 +87,7 @@ Participation.create(user: user, gruppetto: grup, participation_status: 1)
 user = User.find_by(first_name: "Jan")
 track = Track.create(user: user, name: tracks[1][0])
 track.file.attach(io: tracks[1][1], filename: tracks[1][1].original_filename, content_type: 'application/xml')
-grup = Gruppetto.create(name: "Feierabendrunde mit Marc", track: track, user: user, start: DateTime.strptime("18/12/2022 12:00", "%d/%m/%Y %H:%M"),
+grup = Gruppetto.create(name: "Feierabendrunde mit Marc", track: track, user: user, start: DateTime.strptime("18/10/2023 12:00", "%d/%m/%Y %H:%M"),
                   description: "Jan's coastal trail - better be fast or you'll be last!", gruppetto_status: 'upcoming',
                   difficulty: "Moderate", event_type: "Open", participation_rule: "Manual", avg_speed: 45)
 Participation.create(user: user, gruppetto: grup, participation_status: 1)
@@ -95,7 +95,7 @@ Participation.create(user: user, gruppetto: grup, participation_status: 1)
 user = User.find_by(first_name: "Talina")
 track = Track.create(user: user, name: tracks[2][0])
 track.file.attach(io: tracks[2][1], filename: tracks[2][1].original_filename, content_type: 'application/xml')
-grup = Gruppetto.create(name: "Batch #1044 Ride for your life!", track: track, user: user, start: DateTime.strptime("20/12/2022 07:30", "%d/%m/%Y %H:%M"),
+grup = Gruppetto.create(name: "Batch #1044 Ride for your life!", track: track, user: user, start: DateTime.strptime("20/04/2023 07:30", "%d/%m/%Y %H:%M"),
                   description: "Talina misses all of her Le Wagon friends already! Come catch up with everyone, and let's ride our 🚲 ", gruppetto_status: 'upcoming',
                   difficulty: "Hard", event_type: "Open", participation_rule: "Manual", avg_speed: 30)
 Participation.create(user: user, gruppetto: grup, participation_status: 1)
@@ -103,7 +103,7 @@ Participation.create(user: user, gruppetto: grup, participation_status: 1)
 user = User.all.sample
 track = Track.create(user: user, name: tracks[3][0])
 track.file.attach(io: tracks[3][1], filename: tracks[3][1].original_filename, content_type: 'application/xml')
-grup = Gruppetto.create(name: "Beginner Ride along the Yarra River - Dights Falls", track: track, user: user, start: DateTime.strptime("10/01/2023 12:00", "%d/%m/%Y %H:%M"),
+grup = Gruppetto.create(name: "Beginner Ride along the Yarra River - Dights Falls", track: track, user: user, start: DateTime.strptime("10/07/2023 12:00", "%d/%m/%Y %H:%M"),
                   description: "Just learned to ride your bike? Come meet us for an easy ride along the river! ", gruppetto_status: 'upcoming',
                   difficulty: "Easy", event_type: "Open", participation_rule: "Manual", avg_speed: 15)
 Participation.create(user: user, gruppetto: grup, participation_status: 1)
@@ -111,7 +111,7 @@ Participation.create(user: user, gruppetto: grup, participation_status: 1)
 user = User.all.sample
 track = Track.create(user: user, name: tracks[4][0])
 track.file.attach(io: tracks[4][1], filename: tracks[4][1].original_filename, content_type: 'application/xml')
-grup = Gruppetto.create(name: "End of the Year NYE Party & Cycle! 🚴🏻‍♀️", track: track, user: user, start: DateTime.strptime("31/12/2022 13:00", "%d/%m/%Y %H:%M"),
+grup = Gruppetto.create(name: "End of the Year NYE Party & Cycle! 🚴🏻‍♀️", track: track, user: user, start: DateTime.strptime("31/12/2023 13:00", "%d/%m/%Y %H:%M"),
                   description: "Finish 2022 with a bang!", gruppetto_status: 'upcoming',
                   difficulty: "Hard", event_type: "Open", participation_rule: "Manual", avg_speed: 35)
 Participation.create(user: user, gruppetto: grup, participation_status: 1)
